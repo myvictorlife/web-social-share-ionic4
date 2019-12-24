@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Social Media Shared 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    I hope this can help you in you job ;)
+  </div>
+
+  <div *ngFor="let item of config">
+    <ion-button expand="full" (click)="onClickShare(item.type, item)" color="primary">{{item.type}}</ion-button>
+  </div>
+</ion-content>
